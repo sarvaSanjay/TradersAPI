@@ -2,3 +2,4 @@
 db.sqlite3
 .idea
 Traders/migrations
+TradersApp/__pycache__
