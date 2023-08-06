@@ -22,18 +22,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-@0_zw@7urfd+ehbbj1#!8w#d^=#o4h0cmpn@2o^4r8zkvs=ug8'
-
 pymysql.install_as_MySQLdb()
 
 dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = getenv('APP_SECRET')
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["0.0.0.0", "localhost", "traders2048.azurewebsites.net"]
+ALLOWED_HOSTS = ["0.0.0.0", "localhost", "traders2048.azurewebsites.net", "localhost:4200"]
 
 # Application definition
 
