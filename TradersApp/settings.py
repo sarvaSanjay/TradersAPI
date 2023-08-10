@@ -33,7 +33,7 @@ SECRET_KEY = getenv('APP_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["0.0.0.0", "localhost", "traders2048.azurewebsites.net", 'http://localhost:4200']
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
